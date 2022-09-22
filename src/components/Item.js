@@ -3,7 +3,7 @@ import React, {useState} from "react";
 function Item({ name, category }) {
   const [inCart, setInCart] = useState(false)
   const buttonValue = inCart ? "Remove From Cat" : "Add to Cart"
-  const buttonClass = inCart ? "" : "add"
+  const buttonClass = inCart ? "in-cart" : "add"
 
   function toggleInCart(){
     setInCart(!inCart)
